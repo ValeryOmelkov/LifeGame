@@ -1,0 +1,8 @@
+.wrap {
+    text-align: center;
+}
+
+.gameField {
+    border: 2px solid black;
+    margin: 20px;  
+}
