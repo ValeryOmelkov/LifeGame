@@ -1,8 +1,98 @@
 .wrap {
     text-align: center;
+
+}
+
+.container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
 }
 
 .gameField {
     border: 2px solid black;
-    margin: 20px;  
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.blockCanvas{
+    align-content: center;
+    float: left;
+    flex: 1;
+}
+
+.setting{
+    float: left; 
+    height: 450px; 
+    width: 250px; 
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+
+.block{
+    padding-top: 5px;
+    clear: both;
+}
+
+.text{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    clear: both;
+    font-size: 14px;
+}
+
+.blockText{
+    width: 100%; 
+    text-align: right;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.slider{
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.settingBlock{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 90%;
+    text-align: left;
+}
+
+.oneSlider{
+    float: left;
+    width: 108px;
+}
+
+.twoSlider{
+    float: left;
+    width: 108px;
+    padding-left: 8px; 
+    margin-bottom: 5px;
+}
+
+.imageButton{
+    width: 80px;
+    height: 80px;
+    /* border: 1px solid black;
+    border-radius: 15px; */
+}
+
+.refreshButton{
+    width: 60px;
+    height: 60px;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-top: 12px;
+    /* border: 1px solid black;
+    border-radius: 15px; */
 }
