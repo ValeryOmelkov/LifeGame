@@ -149,8 +149,11 @@ class Game {
         (<any>this._stepButton).style.opacity = 1;
         this._playAndPause.src = 'image/play.png'
         this._typeSlider.disabled = false;
-        this._widthSlider.disabled = false;
-        this._heightSlider.disabled = false;
+        console.log(this._sizePixelSlider.value === '2');
+        if(this._sizePixelSlider.value === '2'){
+            this._widthSlider.disabled = false;
+            this._heightSlider.disabled = false;
+        }
         this._sizePixelSlider.disabled = false;
         this._speedSlider.disabled = false;
         this._field = this._emptyField(this._isCell);
@@ -287,7 +290,6 @@ class Game {
     }
 
     protected _onSlideSizePixel(): void{
-        console.log(typeof this._sizePixelSlider.value);
         switch(this._sizePixelSlider.value){
             case '1': 
                 this._sizePixel = 5;
