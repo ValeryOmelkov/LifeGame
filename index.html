@@ -7,27 +7,28 @@
 </head>
 <body>
     <div class="wrap">
-        <h1>Игра "Жизнь"</h1>
+        <h1 style="margin-top: 0px;">Игра "Жизнь"</h1>
         <div class='container'>
             <div class='setting'>
                 <div class="settingBlock">
+                    <h2 align='center' style='margin-top: 0px; margin-bottom: 10px;'>Настройки</h2>
                     <div class='blockText' style="margin-top: 0px;">  
                         <span style="float: left">Тип</span>  
                         <span id='typeText'>Стандартная</span>  
                     </div>
-                    <input id='typeSlider' class='slider' type="range" min="1" max="2" value="1">
+                    <input id='typeSlider' class='slider' type="range" min="1" max="3" value="1">
 
                     <div class='blockText'>  
                         <span style="float: left">Ширина</span>  
-                        <span id='widthText'>76</span>  
+                        <span id='widthText'>90</span>  
                     </div>
-                    <input id='widthSlider' class='slider' type="range" min="30" max="90" value="76">
+                    <input id='widthSlider' class='slider' type="range" min="30" max="90" value="90">
                     
                     <div class='blockText'>  
                         <span style="float: left">Высота</span>  
-                        <span id='heightText'>46</span>  
+                        <span id='heightText'>48</span>  
                     </div>
-                    <input id='heightSlider' class='slider' type="range" min="15" max="60" value="46">
+                    <input id='heightSlider' class='slider' type="range" min="15" max="60" value="48">
                     
                     <div class='blockText'>  
                         <span style="float: left">Размер клетки</span>  
@@ -37,7 +38,7 @@
                     
                     <div class='blockText'>  
                         <span style="float: left">Скорость</span>  
-                        <span id='speedText'>0.2</span>  
+                        <span id='speedText'>0.200</span>  
                     </div>
                     <input id='speedSlider' class='slider' type="range" min="10" max="5000" value="200">
                     
@@ -70,14 +71,82 @@
             <div class="blockCanvas">
                 <canvas class='gameField' id="field"></canvas>
             </div>
-            <div class='setting'></div>
+            <div class='setting'>
+                <div id='settingBiom' class="settingBlock" style="opacity: 0;">
+                    <h2 align='center' style='margin-top: 0px; margin-bottom: 10px;'>Биомы</h2>
+                    <h3 class='titleBiom sep'>Море</h3>
+                    <div class='blockText'>  
+                        <span style="float: left">Срок жизни</span>  
+                        <span id='lifeSeaText'>2</span>  
+                    </div>
+                    
+                    <div class='blockText'>  
+                        <span style="float: left">Сохранение</span>  
+                        <span id='saveSeaText'>1 - 2</span>  
+                    </div>
+
+                    <div class='blockText' style='clear: both'>  
+                        <span style="float: left">Размножение</span>  
+                        <span id='reprodSeaText'>2</span>  
+                    </div>      
+                    
+                    <h3 class='titleBiom sep'>Пляж</h3>
+                    <div class='blockText'>  
+                        <span style="float: left">Срок жизни</span>  
+                        <span id='lifeBeachText'>8</span>  
+                    </div>
+                    
+                    <div class='blockText'>  
+                        <span style="float: left">Сохранение</span>  
+                        <span id='saveBeachText'>1 - 4</span>  
+                    </div>
+
+                    <div class='blockText' style='clear: both'>  
+                        <span style="float: left">Размножение</span>  
+                        <span id='reprodBeachText'>2</span>  
+                    </div>     
+
+                    <h3 class='titleBiom sep'>Лес</h3>
+                    <div class='blockText'>  
+                        <span style="float: left">Срок жизни</span>  
+                        <span id='lifeForestText'>20</span>  
+                    </div>
+                    
+                    <div class='blockText'>  
+                        <span style="float: left">Сохранение</span>  
+                        <span id='saveForestText'>2 - 3</span>  
+                    </div>
+
+                    <div class='blockText' style='clear: both'>  
+                        <span style="float: left">Размножение</span>  
+                        <span id='reprodForestText'>3</span>  
+                    </div>  
+
+                    <h3 class='titleBiom sep'>Горы</h3>
+                    <div class='blockText'>  
+                        <span style="float: left">Срок жизни</span>  
+                        <span id='lifeMountainText'>2</span>  
+                    </div>
+                    
+                    <div class='blockText'>  
+                        <span style="float: left">Сохранение</span>  
+                        <span id='saveMountainText'>2 - 5</span>  
+                    </div>
+
+                    <div class='blockText' style='clear: both'>  
+                        <span style="float: left">Размножение</span>  
+                        <span id='reprodMountainText'>3</span>  
+                    </div>  
+                </div>
+            </div>
         </div>
-        <div class='block'>
+        <div class='block'>П
             <p>Циклов прошло: <span id="cycles">0</span></p>
             <input id="startAndPause" type="image" src='image/play.png' class="imageButton">
             <input id="step" type="image" src='image/step.png' class="imageButton">
             <input id="refresh" type="image" src='image/refresh.png' class="refreshButton">
             <input id="randomField" type="image" src='image/generate.png' class="imageButton">
+            <input id="map" type="image" src='image/map.png' class="mapButton">
         </div>
     </div>
 <script src="game.js"></script> 
